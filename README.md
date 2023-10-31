@@ -8,3 +8,7 @@
 6. Thymeleaf
 7. MyBatis(annotation)
 8. Spring Security
+
+# 프로젝트 주요기능
+
+
