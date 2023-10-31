@@ -1,6 +1,6 @@
 ﻿# 개발환경
 
-1. IDE: IntelliJ IDEA Community
+1. IDE: IntelliJ IDEA Ultimate
 2. Spring Boot 3.1.5
 3. JDK 17
 4. MariaDB
