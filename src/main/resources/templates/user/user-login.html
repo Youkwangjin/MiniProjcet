@@ -14,22 +14,22 @@
     <form action="/" method="post">
         <!-- 사용자 로그인 ID 입력란-->
         <div class="int-area">
-            <input type="text" name="user_id" id="id" autocomplete="off" required>
-            <label for="id">User Id</label>
+            <input type="text" name="userid" id="login-id" autocomplete="off" required>
+            <label for="login-id">User Id</label>
         </div>
         <!-- 사용자 비밀번호 ID 입력란-->
         <div class="int-area">
-            <input type="password" name="user_pwd" id="pwd" autocomplete="off" required>
-            <label for="pwd">Password</label>
+            <input type="password" name="userpwd" id="login-pwd" autocomplete="off" required>
+            <label for="login-pwd">Password</label>
         </div>
         <!-- 로그인 버튼 -->
         <div class="btn-area">
-            <button type="submit" id="btn">LOGIN</button>
+            <button type="submit" id="btn-login">LOGIN</button>
         </div>
     </form>
     <div class="caption">
         <a href="/">아이디/비밀번호 찾기</a>
-        <a href="/">회원가입</a>
+        <a href="/user/join">회원가입</a>
     </div>
 </section>
 <script src="/js/user/user-login.js"></script>

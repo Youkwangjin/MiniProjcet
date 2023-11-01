@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>회원가입</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="/css/user/user-join.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-
+<section class="join-form">
+    <h1>회원가입</h1>
+    <form action="/" method="post">
+        <!-- 사용자 ID 정보 입력란-->
+        <div class="int-area">
+            <input type="text" name="userid" id="join-id" autocomplete="off" required>
+            <label for="join-id">User Id</label>
+        </div>
+        <!-- 사용자 비밀번호 정보 입력란-->
+        <div class="int-area">
+            <input type="password" name="userpwd" id="join-pwd" autocomplete="off" required>
+            <label for="join-pwd">Password</label>
+        </div>
+        <!-- 사용자 이름 정보 입력란-->
+        <div class="int-area">
+            <input type="text" name="username" id="join-name" autocomplete="off" required>
+            <label for="join-name">Name</label>
+        </div>
+        <!-- 사용자 이메일 정보 입력란-->
+        <div class="int-area">
+            <input type="email" name="useremail" id="join-email" autocomplete="off" required>
+            <label for="join-email">Email</label>
+        </div>
+        <!-- 회원가입 버튼 -->
+        <div class="btn-area">
+            <button type="submit" id="btn-join">JOIN</button>
+        </div>
+    </form>
+    <div class="caption">
+        <a href="/user/login">로그인</a>
+    </div>
+</section>
+<script src="/js/user/user-join.js"></script>
 </body>
 </html>

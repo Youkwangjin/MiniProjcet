@@ -1,16 +1,16 @@
-let id = $('#id');
-let pwd = $('#pwd');
-let btn = $('#btn');
+let login_id = $('#login-id');
+let login_pwd = $('#login-pwd');
+let login_btn = $('#btn-login');
 
-$(btn).on('click', function(){
-    if($(id).val() === " "){
-        $(id).next('label').addClass('warning');
+$(login_btn).on('click', function(){
+    if($(login_id).val() === ""){
+        $(login_id).next('label').addClass('warning');
         setTimeout(function(){
             $('label').removeClass('warning');
         },1500);
     }
-    else if($(pwd).val () === ""){
-        $(pwd).next('label').addClass('warning');
+    else if($(login_pwd).val () === ""){
+        $(login_pwd).next('label').addClass('warning');
         setTimeout(function(){
             $('label').removeClass('warning');
         },1500);
