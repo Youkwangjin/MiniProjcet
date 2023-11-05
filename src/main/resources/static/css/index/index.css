@@ -1398,9 +1398,87 @@ button:disabled,
 
 /* Footer */
 
-#footer .inner {
-    border-top: 1px solid #dbdbdb;
-    padding-top: 3em;
+.footer {
+    color: #fff;
+    /* background: url("") top center no-repeat; */
+    background-size: cover;
+    font-size: 14px;
+    padding: 80px 0 60px 0; /*footer 내부 여백*/
+    position: relative;
+}
+
+.footer:before { /*배경 이미지 위에 어두운 페이지 추가*/
+    content: "";
+    background: rgba(0, 0, 0, 0.8); /*투명도 설정*/
+    position: absolute;
+    inset: 0;
+}
+
+.footer .footer-content .footer-info { /*footer 내의 정보 섹션 스타일링*/
+    margin-bottom: 30px;
+}
+
+.footer .footer-content .footer-info h3 { /*정보 섹션의 제목 스타일링*/
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer .footer-content .footer-info h3 span {
+    color: var(--color-primary);
+}
+
+.footer .footer-content .footer-info p { /*정보 섹션의 설명 텍스트를 스타일링*/
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: var(--font-primary);
+    color: #fff;
+}
+
+.footer .footer-content h4 { /*하위 섹션의 제목을 스타일링*/
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer .footer-content .footer-links { /*링크 목록 섹션*/
+    margin-bottom: 30px;
+}
+
+.footer .footer-content .footer-links ul { /*링크 목록의 순서 없는 목록을 스타일링*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .footer-content .footer-links ul li { /*각 링크 항목 스타일링*/
+    padding: 8px 0;
+}
+
+.footer .footer-content .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+.footer .footer-content .footer-links ul a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+
+.footer .footer-content .footer-links ul a:hover {
+    color: #fff;
+}
+
+.footer .footer-legal .copyright {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .copyright {
