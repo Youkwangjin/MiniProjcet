@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>게시판</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
     <link rel="stylesheet" href="/css/board/board-list.css">
-    <link rel="stylesheet" href="/css/index/index.css">
 </head>
 <body>
 <header id="header">
@@ -19,68 +19,72 @@
         </nav>
     </div>
 </header>
-<section id="banner-board"><h1>Today OOTD</h1>
-    <p>자신의 패션을 공유해보세요!</p>
-</section>
-<section class="notice">
-    <div class="page-title">
-        <div class="container">
-            <h3>공지사항</h3>
-        </div>
+<div class="board_wrap">
+    <div class="board_title">
+        <strong>공지사항</strong>
+        <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
     </div>
-
-    <!-- board list area -->
-    <div id="board-list">
-        <div class="container">
-            <table class="board-table">
-                <thead>
-                <tr>
-                    <th scope="col" class="th-num">번호</th>
-                    <th scope="col" class="th-title">제목</th>
-                    <th scope="col" class="th-readcnt">조회수</th>
-                    <th scope="col" class="th-date">등록일</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>3</td>
-                    <th>
-                        <a href="/">[공지사항] 개인정보 처리방침 변경안내처리방침</a>
-                    </th>
-                    <td>4</td>
-                    <td>2023.11.02</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <th><a href="/">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
-                    <td>4</td>
-                    <td>2023.11.02</td>
-                </tr>
-
-                <tr>
-                    <td>1</td>
-                    <th><a href="/">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
-                    <td>4</td>
-                    <td>2023.11.02</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <!-- board seach area -->
-    <div id="board-search">
-        <div class="container">
-            <div class="search-window">
-                <form action="">
-                    <div class="search-wrap">
-                        <label for="search" class="blind">공지사항 내용 검색</label>
-                        <input id="search" type="search" name="" placeholder="검색어를 입력해주세요." value="">
-                        <button type="submit" class="btn btn-dark">검색</button>
-                    </div>
-                </form>
+    <div class="board_list_wrap">
+        <div class="board_list">
+            <div class="top">
+                <div class="num">번호</div>
+                <div class="title">제목</div>
+                <div class="writer">글쓴이</div>
+                <div class="date">작성일</div>
+                <div class="count">조회</div>
+            </div>
+            <div>
+                <div class="num">5</div>
+                <div class="title"><a href="/">[공지사항] 개인정보 처리방침 변경안내처리방침</a></div>
+                <div class="writer">유광진</div>
+                <div class="date">2021.1.15</div>
+                <div class="count">33</div>
+            </div>
+            <div>
+                <div class="num">4</div>
+                <div class="title"><a href="/">[공지사항] 개인정보 처리방침 변경안내처리방침</a></div>
+                <div class="writer">한국인</div>
+                <div class="date">2021.1.15</div>
+                <div class="count">33</div>
+            </div>
+            <div>
+                <div class="num">3</div>
+                <div class="title"><a href="/">공지사항 안내입니다. 이용해주셔서 감사합니다.</a></div>
+                <div class="writer">유광진</div>
+                <div class="date">2021.1.15</div>
+                <div class="count">33</div>
+            </div>
+            <div>
+                <div class="num">2</div>
+                <div class="title"><a href="/">공지사항 안내입니다. 이용해주셔서 감사합니다</a></div>
+                <div class="writer">한국인</div>
+                <div class="date">2021.1.15</div>
+                <div class="count">33</div>
+            </div>
+            <div>
+                <div class="num">1</div>
+                <div class="title"><a href="/">공지사항 안내입니다. 이용해주셔서 감사합니다</a></div>
+                <div class="writer">한국인</div>
+                <div class="date">2021.1.15</div>
+                <div class="count">33</div>
             </div>
         </div>
+        <div class="board_page">
+            <a href="#" class="bt first"><<</a>
+            <a href="#" class="bt prev"><</a>
+            <a href="#" class="num on">1</a>
+            <a href="#" class="num">2</a>
+            <a href="#" class="num">3</a>
+            <a href="#" class="num">4</a>
+            <a href="#" class="num">5</a>
+            <a href="#" class="bt next">></a>
+            <a href="#" class="bt last">>></a>
+        </div>
+        <div class="bt_wrap">
+            <a href="/board/write" class="on">등록</a>
+            <!--<a href="#">수정</a>-->
+        </div>
     </div>
-</section>
+</div>
 </body>
 </html>
